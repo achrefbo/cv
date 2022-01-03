@@ -1,0 +1,116 @@
+:root {
+  --couleur-p: #e71d36;
+  --couleur-s: #ffffff;
+  font-size: 16px;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.red-line {
+  height: 3px;
+  width: 50px;
+  background: var(--couleur-p);
+}
+h1 {
+  font-weight: 400 !important;
+}
+h2 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-bottom: 100px;
+  background: url(../img/achref.png);
+  background-position-y: bottom;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+.my-intro {
+  max-width: 500px;
+}
+section {
+  height: 100vh;
+}
+.circle {
+  background: var(--couleur-p);
+
+  padding: 0px 8px;
+  border-radius: 25%;
+  line-height: 30px;
+}
+.education {
+  height: 300px;
+  overflow: scroll;
+}
+.education::-webkit-scrollbar {
+  width: 2px;
+}
+.education::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(#000000b4, #000000c1), url(../img/contact.jpg);
+  box-shadow: 1px 1px 300px 1px inset #000000b4;
+  height: 550px;
+  background-size: cover;
+  border: 1px solid var(--couleur-p);
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 10px 1px var(--couleur-p) !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--couleur-p);
+}
+.test-line {
+  line-height: 35px;
+}
+
+.portfolio-nav ul li:hover {
+  background: var(--couleur-p);
+  color: white;
+  padding: 0px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.portfolio-img {
+  height: 300px;
+  overflow: scroll;
+}
+.portfolio-img img {
+  width: 100%;
+}
+
+.Portfolio {
+  height: 200vh;
+}
+
+.card-portfolio:hover {
+  background: black;
+
+  color: white;
+  transition: ease-in-out 1s;
+}
+@media screen and (max-width: 991px) {
+
+section {
+  height: 100%;
+}
+.Portfolio{
+  height: 100%;
+}
+}
