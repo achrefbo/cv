@@ -113,4 +113,8 @@ section {
 .Portfolio{
   height: 100%;
 }
+section{
+  padding: 20px 0px;
+}
+
 }
