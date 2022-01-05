@@ -24,10 +24,13 @@ h2 {
   justify-content: flex-start;
   align-items: flex-end;
   padding-bottom: 100px;
-  background: url(../img/achref.png);
+  background: url(../img/achref-bg.png), rgba(111, 108, 105, 0.042);
   background-position-y: bottom;
   background-position-x: right;
   background-repeat: no-repeat;
+
+  
+  
 }
 .my-intro {
   max-width: 500px;
@@ -105,6 +108,7 @@ textarea:focus {
   color: white;
   transition: ease-in-out 1s;
 }
+
 @media screen and (max-width: 991px) {
 
 section {
@@ -120,5 +124,26 @@ section{
 .education {
   height: 100%;
   
+}
+.intro {
+  display: grid;
+
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+ 
+ background-size: cover;
+background-position-x: center;
+background-repeat: no-repeat;
+
+}
+.my-intro{
+  margin-top: 400px;
+  
+  padding: 20px;
+  border: 1px solid black;
+ 
+  background:rgba(255, 255, 255, 0.438);
+
 }
 }
