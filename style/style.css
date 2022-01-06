@@ -4,6 +4,7 @@
   font-size: 16px;
 }
 * {
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -19,15 +20,32 @@ h2 {
   font-weight: 500;
   font-size: 3rem;
 }
+.scroll-up{
+  background: var(--couleur-p);
+  display: inline;
+  position: fixed;
+  bottom: 10px;
+  right:-40px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: ease-in 1s;
+  cursor: pointer;
+}
+.scroll-up-show{
+  right: 10px;
+}
 .intro {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-bottom: 100px;
+  padding-bottom: 140px;
   background: url(../img/achref-bg.png), rgba(111, 108, 105, 0.042);
   background-position-y: bottom;
   background-position-x: right;
   background-repeat: no-repeat;
+  height: 700px !important;
 
   
   
@@ -35,9 +53,18 @@ h2 {
 .my-intro {
   max-width: 500px;
 }
-section {
+/* section {
   height: 100vh;
+} */
+
+section{
+  margin: 50px 0;
 }
+section:nth-child(2){
+  margin: auto auto;
+  
+}
+
 .circle {
   background: var(--couleur-p);
 
@@ -62,11 +89,12 @@ section {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background: linear-gradient(#000000b4, #000000c1), url(../img/contact.jpg);
-  box-shadow: 1px 1px 300px 1px inset #000000b4;
-  height: 550px;
+  background: #d3d3d3cf url(../img/contact.jpg);
+ 
+  background-blend-mode: screen;
+  height: 500px;
   background-size: cover;
-  border: 1px solid var(--couleur-p);
+  border: 1px solid rgba(0, 0, 0, 0.09);
 }
 input:focus,
 textarea:focus {
@@ -98,15 +126,20 @@ textarea:focus {
   width: 100%;
 }
 
-.Portfolio {
+/* .Portfolio {
   height: 200vh;
+} */
+.contact-info{
+  background: #0e0909bf;
+ 
 }
-
 .card-portfolio:hover {
-  background: black;
-
-  color: white;
-  transition: ease-in-out 1s;
+    /* background: black; */
+    padding: 18px;
+    background-blend-mode: hard-light;
+    /* color: white; */
+    transition: ease 0.5s;
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 991px) {
@@ -117,6 +150,15 @@ section {
 }
 .Portfolio{
   height: 100%;
+}
+section:nth-child(2){
+  padding: 0px;
+  
+}
+section:last-child{
+  margin: auto auto;
+  padding: 0px;
+  
 }
 section{
   padding: 20px 0px;
@@ -140,7 +182,7 @@ background-repeat: no-repeat;
 .my-intro{
   margin-top: 400px;
   
-  padding: 20px;
+  /* padding: 20px; */
   border: 1px solid black;
  
   background:rgba(255, 255, 255, 0.438);
