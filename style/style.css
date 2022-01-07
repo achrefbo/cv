@@ -20,6 +20,7 @@ h2 {
   font-weight: 500;
   font-size: 3rem;
 }
+
 .scroll-up{
   background: var(--couleur-p);
   display: inline;
@@ -92,7 +93,7 @@ section:nth-child(2){
   background: #d3d3d3cf url(../img/contact.jpg);
  
   background-blend-mode: screen;
-  height: 500px;
+  height: 495px;
   background-size: cover;
   border: 1px solid rgba(0, 0, 0, 0.09);
 }
