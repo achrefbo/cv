@@ -20,7 +20,35 @@ h2 {
   font-weight: 500;
   font-size: 3rem;
 }
+.nav-lang{
+  position: absolute;
+  top: 0;
+  
+}
+.nav-lang ul{
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+.nav-lang ul li{
+margin-left: 10px;
+line-height: 30px;
+padding: 20px 0px;
+}
+.nav-lang ul li a{
+  text-decoration: none;
+  background: #e71d36;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.nav-lang ul li a:hover{
+  text-decoration: none;
+  color: #e71d36;
+  background: #ffffff;
 
+}
 .scroll-up{
   background: var(--couleur-p);
   display: inline;
